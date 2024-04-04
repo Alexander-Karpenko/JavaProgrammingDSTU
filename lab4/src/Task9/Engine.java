@@ -67,6 +67,20 @@ public class Engine {
         this.numberOfCylinders = numberOfCylinders;
     }
 
+    public void printInfo(){
+        System.out.println(Engine.class.toString() + "\n" +
+                "______________________________" + "\n"  +
+                "    String serialNumber\n" +
+                "    int power\n" +
+                "    double volume;\n" +
+                "    String fuelCons;\n" +
+                "    String fuelType;\n" +
+                "    int numberOfCylinders\n" +
+                "______________________________" + "\n" +
+                "   public void printInfo()\n" +
+                "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+        );
+    }
     @Override
     public String toString() {
         return "Engine{" +

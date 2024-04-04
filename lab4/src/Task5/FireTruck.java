@@ -6,7 +6,7 @@ import Task4.Engine;
 import java.util.regex.Pattern;
 
 public class FireTruck extends Car{
-    public FireTruck(String brand, Type type, String color, int wheelsNum, Engine engine) {
+    public FireTruck(String brand, String color, int wheelsNum, Engine engine) {
         super(brand, Type.TRUCK, "Red", wheelsNum, engine);
 
     }

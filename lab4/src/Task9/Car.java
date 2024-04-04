@@ -66,6 +66,7 @@ public abstract class Car {
                 "    DepotState depotState;\n" +
                 "______________________________" + "\n" +
                 "   public void setRegisterSign(String registerSign)\n" +
+                "   public void printInfo()\n" +
                 "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
                 );
     }

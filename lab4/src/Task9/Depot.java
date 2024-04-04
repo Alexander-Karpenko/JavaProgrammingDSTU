@@ -89,12 +89,31 @@ public class Depot {
         System.out.println(res);
     }
 
-
     public int getSize() {
         return size;
     }
 
     public void setSize(int size) {
         this.size = size;
+    }
+
+    public void printInfo(){
+        System.out.println(Depot.class.toString() + "\n" +
+                "______________________________" + "\n"  +
+                "    int size;\n" +
+                "    List<Car> cars;\n" +
+                "______________________________" + "\n" +
+                "   public void addCar(Car car)\n" +
+                "   public void deleteCar(int i)\n" +
+                "   public void sendToVoyage(Car car)\n" +
+                "   public void sendToRepair(Car car)\n" +
+                "   public void returnFromVoyage(Car car)\n" +
+                "   public void returnFromRepair(Car car)\n" +
+                "   public void outListInAGoodConditionCar()\n" +
+                "   public void outListBrokenCar()\n" +
+                "   public void outListInVoyageCar()\n" +
+                "   public void printInfo()\n" +
+                "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+        );
     }
 }

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Depot {
     private int size;
-    private List<Car> cars;
+    private List<Car> cars = new ArrayList<Car>();
 
     public Depot(int size) {
         this.size = size;
@@ -85,6 +85,13 @@ public class Depot {
             if(car.getDepotState() == DepotState.IN_VOYAGE){
                 res.add(car);
             }
+        }
+        System.out.println(res);
+    }
+    public void outAllCars(){
+        List<Car> res = new ArrayList<>();
+        for(Car car : cars){
+                res.add(car);
         }
         System.out.println(res);
     }
