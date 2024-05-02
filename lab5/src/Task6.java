@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Scanner;
+import java.util.*;
 
 public class Task6 {
     public static void main(String[] args) {
@@ -8,12 +6,17 @@ public class Task6 {
         System.out.print("Введите количество команд (N): ");
         int N = scanner.nextInt();
 
-        if (N <= 1 || N % 2 != 0) {
+        if (N == 2 || N == 4 || N == 8 || N == 16 || N == 32 || N == 64 || N == 128) {
+
+        }else {
             System.out.println("Недопустимое значение N. Устанавливается значение по умолчанию (8).");
             N = 8;
         }
 
-        ArrayList<String> teams = generateTeamNames(N);
+        List<String> teams = new ArrayList<>();
+        for (int i = 1; i <= N; i++) {
+            teams.add("Команда" + i);
+        }
 
         ArrayList<String> drawBag = new ArrayList<>(teams);
         Collections.shuffle(drawBag);
@@ -37,15 +40,7 @@ public class Task6 {
             drawBag = new ArrayList<>(winners);
         }
 
-        // Вывод победителя турнира
         System.out.println("Победитель турнира: " + drawBag.get(0));
     }
 
-    private static ArrayList<String> generateTeamNames(int N) {
-        ArrayList<String> teams = new ArrayList<>();
-        for (int i = 1; i <= N; i++) {
-            teams.add("Команда" + i);
-        }
-        return teams;
-    }
 }
