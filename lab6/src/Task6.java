@@ -14,8 +14,8 @@ public class Task6 extends JFrame {
 
     public Task6() {
         try {
-            img = ImageIO.read(new File("C:\\Users\\0gree\\OneDrive\\Desktop\\Dark Souls II Screenshot 2024.03.24 - 11.26.15.59.png"));
-            originalImg = ImageIO.read(new File("C:\\Users\\0gree\\OneDrive\\Desktop\\Dark Souls II Screenshot 2024.03.24 - 11.26.15.59.png"));
+            img = ImageIO.read(new File("C:\\Users\\0gree\\OneDrive\\Pictures\\Screenshots\\Снимок экрана 2024-01-18 201918.png"));
+            originalImg = ImageIO.read(new File("C:\\Users\\0gree\\OneDrive\\Pictures\\Screenshots\\Снимок экрана 2024-01-18 201918.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
